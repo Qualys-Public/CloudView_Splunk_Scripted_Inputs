@@ -24,6 +24,7 @@ You can utilize the power of scripted inputs to ingest CSA information by follow
 * sudo chmod +x qualysCVDownload.py 
 
 **2. Go to the Add New page**
+
    **By Splunk Home**
 * Click the Add Data link in Splunk Home. 
 * Click Monitor to monitor a script on the local machine, or Forward to forward data from a script on a remote machine. Splunk Web displays the "Add Data - Select Source" page. 
