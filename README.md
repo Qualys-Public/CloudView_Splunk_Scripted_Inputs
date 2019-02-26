@@ -22,8 +22,6 @@ You can utilize the power of scripted inputs to ingest CSA information by follow
 * Ensure to replace username, password and base url for Cloudview in the script file. 
 * Make the file executable and change the owner and group to user splunk. 
 ```sudo chmod +x qualysCVDownload.py``` 
-![](/Images/1.png?raw=true)
-
 
 **2. Go to the Add New page**
 
@@ -31,12 +29,14 @@ You can utilize the power of scripted inputs to ingest CSA information by follow
 * Click the Add Data link in Splunk Home. 
 * Click Monitor to monitor a script on the local machine, or Forward to forward data from a script on a remote machine. Splunk Web displays the "Add Data - Select Source" page. 
 * In the left pane, locate and select Scripts.
+![](/Images/1.png?raw=true) ![](/Images/2.png?raw=true)
 
    **By Splunk Settings**
 * Click Settings in the upper right corner of Splunk Web. 
 * Click Data Inputs. 
 * Click Scripts. 
 * Click New to add an input.
+![](/Images/3.png?raw=true) ![](/Images/4.png?raw=true)
 
 **3. Select the input source**
 * In the Script Path drop down, select the path where the script resides. . Splunk Web updates the page to include a new drop-down list, "Script Name." 
@@ -44,6 +44,7 @@ You can utilize the power of scripted inputs to ingest CSA information by follow
 * In the Interval field, enter the amount of time (in seconds) that Splunk Enterprise should wait before invoking the script. You can schedule it to run daily or set up your own cron schedule. 
 * Optionally, In the Source Name Override field, enter a new source name to override the default source value, if necessary. The default source name field is the path of your script file.  
 * Click Next.
+![](/Images/5.png?raw=true)
 
 **4. Specify input settings**
 * Select the source type for the script. You can choose Select to pick from the list of available source types on the local machine and select “json_no_timestamp”. 
@@ -51,6 +52,7 @@ You can utilize the power of scripted inputs to ingest CSA information by follow
 * Set the Host name value. You have several choices for this setting. Example: Cloudview 
 * Set the Index that Splunk Enterprise should send data to. Leave the value as "default", unless you have defined multiple indexes to handle different types of events. In addition to indexes for user data. 
 * Click Review.
+![](/Images/6.png?raw=true)![](/Images/7.png?raw=true)
 
 **5. Review your choices**
 * Review the settings. 
@@ -60,6 +62,7 @@ You can utilize the power of scripted inputs to ingest CSA information by follow
 
 ### Searching & Reporting
 This is how it looks once the script runs and data is populated. 
+![](/Images/8.png?raw=true)
 
 ### Troubleshooting
 Search for errors in Searching and Reporting app on your Splunk Enterprise using the query: 
