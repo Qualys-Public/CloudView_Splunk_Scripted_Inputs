@@ -21,7 +21,9 @@ You can utilize the power of scripted inputs to ingest CSA information by follow
 * Copy the contents from the Qualys GitHub for the script file. 
 * Ensure to replace username, password and base url for Cloudview in the script file. 
 * Make the file executable and change the owner and group to user splunk. 
-* sudo chmod +x qualysCVDownload.py 
+```sudo chmod +x qualysCVDownload.py``` 
+![](/Images/1.png?raw=true)
+
 
 **2. Go to the Add New page**
 
